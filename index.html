@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emir Mızraklı - Web Geliştirici Portfolyosu</title>
+    <!-- Google Fonts: Poppins (Gövde) & Montserrat (Başlık) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome ikonları için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader Sonu -->
+
+    <!-- Özel İmleç -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- Özel İmleç Sonu -->
+
+    <header id="header">
+        <nav class="container">
+            <a href="#hero" class="logo">Emir M.</a>
+            <ul>
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#projects">Projelerim</a></li>
+                <li><a href="#testimonials">Referanslar</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <!-- Tema Değiştirme Butonu -->
+            <button id="theme-toggle" class="theme-toggle-button" aria-label="Temayı Değiştir">
+                <i class="fas fa-moon"></i> <!-- Başlangıçta Ay ikonu -->
+            </button>
+            <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero container">
+            <div class="hero-content">
+                <h1>Merhaba, Ben Emir Mızraklı</h1>
+                <p class="subtitle">Yeni Mezun Web Geliştirici</p>
+                <p> <span class="text-highlight">Modern ve kullanıcı dostu</span> web deneyimleri oluşturma konusunda tutkuluyum. Yeni teknolojileri öğrenmeye ve kendimi geliştirmeye her zaman açığım.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="GitHub Profilim"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn Profilim"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter Profilim"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-button">Projelerimi Gör <i class="fas fa-arrow-right"></i></a>
+                    <a href="emir_mizrakli_cv.pdf" download class="cta-button cta-button-secondary">CV İndir <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-scroll-delay="100">
+                 <img src="https://via.placeholder.com/450" alt="Emir Mızraklı Profil Resmi">
+            </div>
+        </section>
+
+        <section id="about" class="about container section-padding">
+            <h2 data-scroll-delay="0">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-image" data-scroll-delay="100">
+                     <img src="https://via.placeholder.com/350" alt="Emir Mızraklı Çalışırken">
+                 </div>
+                <div class="about-text" data-scroll-delay="200">
+                    <p>Merhaba! Ben Emir, web geliştirme dünyasına yeni adım atmış heyecanlı bir geliştiriciyim. Üniversite eğitimim boyunca edindiğim teorik bilgileri pratik projelerle pekiştirdim ve şimdi bu alanda kariyerime başlamak için sabırsızlanıyorum.</p>
+                    <p>Özellikle front-end teknolojilerine ilgi duyuyorum ve kullanıcıların etkileşimde bulunmaktan keyif alacağı arayüzler tasarlamayı seviyorum. HTML, CSS ve JavaScript konusundaki bilgimi sürekli güncel tutuyor, modern framework ve kütüphaneleri (React, Vue gibi) öğrenmeye çalışıyorum.</p>
+                    <p>Takım çalışmasına yatkınım ve problem çözme becerilerime güveniyorum. Öğrenmeye açık yapım sayesinde yeni teknolojilere hızla adapte olabiliyorum.</p>
+                    <h3>Yeteneklerim</h3>
+                    <!-- Eski Yetenek Listesi Yerine Yeni Yapı -->
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" data-level="95" style="--level: 95;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3 (Flexbox, Grid)</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" data-level="90" style="--level: 90;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" data-level="80" style="--level: 80;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Tasarım</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" data-level="90" style="--level: 90;"></div>
+                            </div>
+                        </div>
+                         <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" data-level="85" style="--level: 85;"></div>
+                            </div>
+                        </div>
+                         <div class="skill-item">
+                            <span class="skill-name">React (Temel)</span> <!-- Örnek yeni yetenek -->
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" data-level="65" style="--level: 65;"></div>
+                            </div>
+                        </div>
+                        <!-- Daha fazla yetenek eklenebilir -->
+                    </div>
+                    <!-- Yetenekler Sonu -->
+
+                    <!-- Yeni: Şu Anda Öğrendiklerim -->
+                    <div class="currently-learning">
+                        <h4>Şu Anda Öğrendiklerim:</h4>
+                        <ul>
+                            <li><i class="fas fa-drafting-compass"></i> Docker & Konteynerleştirme</li>
+                            <li><i class="fas fa-database"></i> PostgreSQL Temelleri</li>
+                            <li><i class="fas fa-cloud"></i> Temel AWS Servisleri</li>
+                        </ul>
+                    </div>
+                    <!-- Şu Anda Öğrendiklerim Sonu -->
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects container section-padding">
+            <h2 data-scroll-delay="0">Projelerim</h2>
+            <div class="project-grid">
+                <!-- Proje Kartı 1 -->
+                <div class="project-card" data-scroll-delay="100">
+                    <div class="project-image-wrapper">
+                         <img src="https://via.placeholder.com/400x250/aabbcc/ffffff?text=Proje+1" alt="Proje 1 Ekran Görüntüsü">
+                    </div>
+                    <div class="project-content">
+                        <h3>Proje Başlığı 1</h3>
+                        <p>Bu projenin kısa bir açıklaması. Kullanılan teknolojiler ve projenin amacı hakkında bilgi verilebilir.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">Canlı Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proje Kartı 2 -->
+                <div class="project-card" data-scroll-delay="200">
+                     <div class="project-image-wrapper">
+                         <img src="https://via.placeholder.com/400x250/ddeeff/000000?text=Proje+2" alt="Proje 2 Ekran Görüntüsü">
+                    </div>
+                     <div class="project-content">
+                        <h3>Proje Başlığı 2</h3>
+                        <p>Farklı bir projenin açıklaması. Belki bir e-ticaret sitesi veya blog uygulaması olabilir.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">Canlı Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proje Kartı 3 -->
+                <div class="project-card" data-scroll-delay="300">
+                     <div class="project-image-wrapper">
+                         <img src="https://via.placeholder.com/400x250/f0e0d0/333333?text=Proje+3" alt="Proje 3 Ekran Görüntüsü">
+                    </div>
+                     <div class="project-content">
+                        <h3>Proje Başlığı 3</h3>
+                        <p>Üçüncü projenin tanıtımı. Örneğin kişisel bir blog veya basit bir oyun.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">Canlı Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Daha fazla proje kartı eklenebilir -->
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials container section-padding">
+            <h2 data-scroll-delay="0">Referanslar</h2>
+            <div class="testimonial-grid">
+                <!-- Referans Kartı 1 -->
+                <div class="testimonial-card" data-scroll-delay="100">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Emir, öğrenmeye hevesli ve problem çözme konusunda harika bir yeteneğe sahip. Projemize yaptığı katkılar paha biçilmezdi."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60/aabbcc/ffffff?text=Y1" alt="Referans 1 Yazar Fotoğrafı">
+                        <div>
+                            <h4>Referans İsmi 1</h4>
+                            <span>Ünvan / Şirket 1</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Referans Kartı 2 -->
+                <div class="testimonial-card" data-scroll-delay="200">
+                     <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Takım çalışmasına çok yatkın ve her zaman pozitif bir tavrı var. Teknik becerileri ve iletişim yeteneği güçlü."</p>
+                     <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60/ddeeff/000000?text=Y2" alt="Referans 2 Yazar Fotoğrafı">
+                         <div>
+                            <h4>Referans İsmi 2</h4>
+                            <span>Ünvan / Şirket 2</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Referans Kartı 3 (Opsiyonel) -->
+                 <div class="testimonial-card" data-scroll-delay="300">
+                     <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Teknik zorlukların üstesinden gelme konusundaki azmi ve detaylara verdiği önem takdire şayan."</p>
+                     <div class="testimonial-author">
+                         <img src="https://via.placeholder.com/60/f0e0d0/333333?text=Y3" alt="Referans 3 Yazar Fotoğrafı">
+                         <div>
+                            <h4>Referans İsmi 3</h4>
+                            <span>Ünvan / Şirket 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container section-padding">
+            <h2 data-scroll-delay="0">İletişim</h2>
+            <p data-scroll-delay="100">Benimle iletişime geçmek, bir proje hakkında konuşmak veya sadece merhaba demek için aşağıdaki formu kullanabilirsiniz!</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" data-scroll-delay="200">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="name">Adınız:</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">E-posta Adresiniz:</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                    <label for="message">Mesajınız:</label>
+                </div>
+                <button type="submit" class="cta-button">Mesaj Gönder <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <p class="contact-alternative">Veya bana <a href="mailto:emir.mizrakli@example.com">emir.mizrakli@example.com</a> adresinden e-posta gönderebilirsiniz.</p>
+             <div class="social-links contact-socials">
+                <a href="#" target="_blank" aria-label="GitHub Profilim"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn Profilim"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter Profilim"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2024 Emir Mızraklı. Tüm hakları saklıdır.</p>
+            <!-- İsteğe bağlı olarak sosyal medya ikonları tekrar eklenebilir -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
